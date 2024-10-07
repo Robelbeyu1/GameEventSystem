@@ -16,7 +16,7 @@ private:
 public:
     // Static method to provide access to the single instance
     static GameEngine* getInstance() {
-        // Lazy initialization: create the instance only when it's needed
+        //initialization: create the instance
         if (!instance) {
             instance = new GameEngine();
         }
