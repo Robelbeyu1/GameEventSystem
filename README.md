@@ -1,6 +1,0 @@
-# GameEventSystem
-The design pattern used in this code is the Singleton Pattern. It ensures that only one instance of a class, in this case, the GameEngine, exists during the program's runtime. This GameEngine manages game events like triggering actions and responding to player interactions. The Singleton Pattern is useful here because it guarantees that all events are controlled by a single engine, ensuring consistency across the game.
-
-One of the main benefits of the Singleton Pattern is that it allows global access to the GameEngine from anywhere in the program, removing the need to pass multiple copies or references. It also saves resources by creating just one instance that is reused. This pattern makes the system simpler to manage since there’s only one central entity controlling the game events.
-
-However, there are some drawbacks. The Singleton Pattern can limit scalability because more complex games might need multiple instances of certain components. It also makes debugging harder when changes to the global state have unintended effects. Testing can be challenging since the Singleton might hold state between tests. While helpful, the Singleton Pattern should be used carefully to avoid these issues.
